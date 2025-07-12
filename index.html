@@ -1,37 +1,28 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>S.W Glitch Demo</title>
+  <meta charset="UTF-8">
+  <title>موقعي الشخصي</title>
   <style>
     body {
-      margin: 0;
-      background-color: black;
-      color: white;
-      font-family: 'Courier New', Courier, monospace;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      overflow: hidden;
+      background-color: #111;
+      color: #00ffcc;
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 100px;
     }
     h1 {
-      font-size: 3rem;
-      animation: glitch 1s infinite;
+      font-size: 3em;
+      animation: glow 1s infinite alternate;
     }
-    @keyframes glitch {
-      0% { text-shadow: 2px 0 red, -2px 0 cyan; }
-      20% { text-shadow: -2px 0 red, 2px 0 cyan; }
-      40% { text-shadow: 2px 2px red, -2px -2px cyan; }
-      60% { text-shadow: -2px -2px red, 2px 2px cyan; }
-      80% { text-shadow: 2px -2px red, -2px 2px cyan; }
-      100% { text-shadow: -2px 2px red, 2px -2px cyan; }
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #0ff; }
+      to { text-shadow: 0 0 20px #0ff; }
     }
   </style>
 </head>
 <body>
-  <h1>S.W Glitch</h1>
+  <h1>🚀 تم النشر بنجاح!</h1>
+  <p>مرحبًا بك في موقع GitHub Pages</p>
 </body>
 </html>
