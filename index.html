@@ -2,16 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>S.W Glitch Intro</title>
+  <title>S.W Glitch Intro</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  .portfolio-filter {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .portfolio-filter button {
+    background: transparent;
+    border: none;
+    color: #00ffff;
+    font-weight: bold;
+    margin: 5px 10px;
+    cursor: pointer;
+  }
+  .portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .portfolio-item {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .portfolio-item img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+  }
+</style>
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+<style><style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
+  /* هنا تبدأ تكتب كودك */
+  body {
+    background-color: #000;
+    color: white;
+  }
+
+  .portfolio-filter {
+    margin: 20px;
+    text-align: center;
+  }
+
+  .filter {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .filter:hover {
+    background-color: #ccc;
+  }
+</style>
+  
+    
+  
+
+  }
+</style>
     body {
-      background-color: #000;
+      background-color: #000;<section id="portfolio" style="padding: 50px; background-color: #000;">
+  <h2 style="color: white; text-align: center;">Portfolio</h2>
+
+  <div class="portfolio-filter">
+    <button class="filter" data-filter="all">ALL</button>
+    <button class="filter" data-filter=".poster">POSTERS</button>
+    <button class="filter" data-filter=".uiux">UX/UI</button>
+    <button class="filter" data-filter=".video">VIDEOS</button>
+  </div>
+
+  <div class="portfolio-items" id="mix-container">
+    <div class="portfolio-item mix poster">
+      <img src="images/poster1.png" alt="Poster">
+    </div>
+    <div class="portfolio-item mix poster">
+      <img src="images/poster2.png" alt="Poster">
+    </div>
+    <div class="portfolio-item mix uiux">
+      <img src="images/uiux1.png" alt="UI/UX">
+    </div>
+    <div class="portfolio-item mix uiux">
+      <img src="images/uiux2.png" alt="UI/UX">
+    </div>
+    <div class="portfolio-item mix video">
+      <img src="images/video1.png" alt="Video">
+    </div>
+  </div>
+</section>
       color: #00ffff;
       font-family: 'Arial', sans-serif;
       overflow: hidden;
